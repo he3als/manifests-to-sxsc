@@ -1,10 +1,10 @@
 <# : batch portion
-@echo off & cls
+@echo off
 powershell -nop Get-Content "%~f0" -Raw ^| iex & exit
 : end batch / begin PowerShell #>
 
 $version = "38655.38527.65535.65535"
-$sxsexpPath = "C:\Users\he3als\Documents\Apps\Misc\sxsexp.exe"
+$sxsexpPath = "$PWD\sxsexp.exe"
 
 if (!(Test-Path $sxsexpPath)) {
     Write-Host "sxsexp not found! edit the variable"
