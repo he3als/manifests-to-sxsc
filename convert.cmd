@@ -1,6 +1,6 @@
 <# : batch portion
 @echo off
-powershell -nop Get-Content "%~f0" -Raw ^| iex & exit
+powershell -nop Get-Content """%~f0""" -Raw ^| iex & exit
 : end batch / begin PowerShell #>
 
 $version = "38655.38527.65535.65535"
